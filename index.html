@@ -7,14 +7,14 @@
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
-  			<a class="main-header-logo">
+  			<a class="main-header-logo" aria-label="logo-sedona">
   				<img src="img/logo-sedona.svg" width="100" height="100" alt="Логотип SITY OF SEDONA">
   			</a>
   			<ul class="site-navigation">
-  				<li><a href="#info">Информация</a></li>
-  				<li><a href="#media">Фото и видео</a></li>
-  				<li><a href="#map">Карта штата</a></li>
-  				<li><a href="#hotels">Гостиницы</a></li>
+  				<li><a href="#info" aria-label="information">Информация</a></li>
+          <li><a href="#media" aria-label="photo and Video">Фото и видео</a></li>
+          <li><a href="#map" aria-label="state map">Карта штата</a></li>
+          <li><a href="#hotels" aria-label="hotels">Гостиницы</a></li>
   			</ul>
   		</nav>	
   	</header>
@@ -71,19 +71,44 @@
   	  	<h2 class="visually-hidden">Поиск отеля в Седоне</h2>
         <p>Заинтересовались?</p>
   	  	<p class="hotel-search-info">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  	  	<!-- Здесь будет форма-->
+  	  	<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <h2>Поиск гостиницы в Седоне</h2>
+          <p class="appointment-item">
+            <label for="appointment-arrival-date">Дата заезда:</label>
+            <input id="appointment-arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+            <button class="button-calendar" type="button" aria-label="calendar"><img src="img/calendar.svg" alt="Календарь"></button>
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-departure-date">Дата выезда:</label> 
+            <input id="appointment-departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+            <button class="button-calendar" type="button" aria-label="calendar"><img src="img/calendar.svg" alt="Календарь"></button>
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-abults">Взрослые:</label>
+            <button class="button-enlarge" type="button" aria-label="enlarge">-</button>
+            <input id="appointment-abults" type="number" name="adults" value="2">
+            <button class="button-reduce" type="button" aria-label="reduce">+</button>
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-children">Дети:</label>
+            <button class="button-enlarge" type="button" aria-label="enlarge">-</button>
+            <input id="appointment-children" type="number" name="children" value="0">
+            <button class="button-reduce" type="button" aria-label="reduce">+</button>
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
   	  </section>
   	</main>
   	<footer class="main-footer">
   		<span class="hashtag">#visitSEDONA</span>
   			<ul class="footer-social">
-  				<li><a class="social-button" href="#tw">twitter</a></li>
-  				<li><a class="social-button" href="#fb">facebook</a></li>
-  				<li><a class="social-button" href="#yt">you tube</a></li>
+  				<li><a class="social-button" href="#tw" aria-label="we are in twitter">twitter</a></li>
+          <li><a class="social-button" href="#fb" aria-label="we are in facebook">facebook</a></li>
+          <li><a class="social-button" href="#yt" aria-label="we are in you tube">you tube</a></li>
   			</ul>
   		<p class="footer-copyright">
   			<span>Website by</span>
-  			<a class="button" href="https://htmlacademy.ru">
+  			<a class="button" href="https://htmlacademy.ru" aria-label="logo-htmlacademy">
   				<img src="img/logo-htmlacademy.svg" width="50" height="50" alt="Логотип HTML academy">
   			</a>
   		</p>
