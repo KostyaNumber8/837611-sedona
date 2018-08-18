@@ -7,14 +7,14 @@
 <body>
 	<header class="main-header">
   		<nav class="main-navigation">
-  			<a class="main-header-logo" aria-label="logo-sedona">
+  			<a class="main-header-logo" href="file:///C:/Users/%D0%9A%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D0%B0/Documents/GitHub/837611-sedona/index.html" aria-label="Главная старница сайта Седона">
   				<img src="img/logo-sedona.svg" width="100" height="100" alt="Логотип SITY OF SEDONA">
   			</a>
   			<ul class="site-navigation">
-  				<li><a href="#info" aria-label="information">Информация</a></li>
-  				<li><a href="#media" aria-label="photo and Video">Фото и видео</a></li>
-  				<li><a href="#map" aria-label="state map">Карта штата</a></li>
-  				<li><a href="#hotels" aria-label="hotels">Гостиницы</a></li>
+  				<li><a href="#info" aria-label="Информация о Седоне">Информация</a></li>
+          		<li><a href="#media" aria-label="Фото и видео Седоны">Фото и видео</a></li>
+          		<li><a href="#map" aria-label="Карта штата Седона">Карта штата</a></li>
+          		<li><a href="#hotels" aria-label="Гостиницы Седоны">Гостиницы</a></li>
   			</ul>
   		</nav>	
   	</header>
@@ -67,7 +67,7 @@
     					<input id="max" type="text" name="max-price" placeholder="3000">
     				</label>
     				<input type="range" id="price-day" name="price-day" min="0" max="3000" step="1">
-    				<button class="button" type="submit" aria-label="show">Показать</button>
+    				<button class="button" type="submit" aria-label="Показать выбранные параметры">Показать</button>
     			</fieldset>
         	</form>
     	</div>
@@ -76,10 +76,20 @@
     		<span class="found">Найдено:3</span>
     		<span>Сортировка:</span>
     		<ul class="sorting-list">
-    			<li class="sorting-item"><a href="#price" aria-label="by price">По цене</a></li>
-    			<li class="sorting-item"><a href="#type" aria-label="by type">По типу</a></li>
-    			<li class="sorting-item"><a href="#rating" aria-label="by rating">По рейтенгу</a></li>	
+    			<li class="sorting-item"><a href="#price" aria-label="Сортировка по цене">По цене</a></li>
+    			<li class="sorting-item"><a href="#type" aria-label="Сортировка по типу">По типу</a></li>
+    			<li class="sorting-item"><a href="#rating" aria-label="Сортировка по рейтенгу">По рейтенгу</a></li>	
     		</ul>
+    		<a class="button-sort-down-up" href="#sort-down-up" aria-label="Сортировка сверху-вниз">
+    			<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+    				<path fill="#231F20" d="M5.5 0L0 10h11z"/>
+    			</svg>
+    		</a>
+    		<a class="button-sort-top-down" href="#sort-top-down" aria-label="Сортировка снизу-вверх">
+    			<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+    				<path fill="#231F20" d="M5.5 10L0 0h11"/>
+    			</svg>
+    		</a>
     	</section>
     	<section class="hotels">
     		<h2 class="visually-hidden">Гостиницы</h2>
@@ -90,8 +100,8 @@
     					<h3>Amara resort & spa</h3>
     					<span class="type-building">Гостиница</span>
     					<span class="price">от 4000 р.</span>
-    					<a class="button more-info" href="#more-info" aria-label="more info">Подробнее</a>
-    					<a class="button book-it" href="#book-it" aria-label="book it">Забронировать</a>
+    					<a class="button more-info" href="#more-info" aria-label="Подробнее о гостинице">Подробнее</a>
+    					<a class="button book-it" href="#book-it" aria-label="Забронировать гостиницу">Забронировать</a>
     				</div>
     				<div class="rating">
     					<!-- Здесь будет форма-->
@@ -104,8 +114,8 @@
     					<h3>Desert quail inn</h3>
     					<span class="type-building">Мотель</span>
     					<span class="price">от 3000 р.</span>
-    					<a class="button more-info" href="#more-info" aria-label="more info">Подробнее</a>
-    					<a class="button book-it" href="#book-it" aria-label="book it">Забронировать</a>
+    					<a class="button more-info" href="#more-info" aria-label="Подробнее о гостинице">Подробнее</a>
+    					<a class="button book-it" href="#book-it" aria-label="Забронировать гостиницу">Забронировать</a>
     				</div>
     				<div class="rating">
     					<!-- Здесь будет форма-->
@@ -118,8 +128,8 @@
     					<h3>Villas at poco diablo</h3>
     					<span class="type-building">Апартаменты</span>
     					<span class="price">от 2000 р.</span>
-    					<a class="button more-info" href="#more-info" aria-label="more info">Подробнее</a>
-    					<a class="button book-it" href="#book-it" aria-label="book it">Забронировать</a>
+    					<a class="button more-info" href="#more-info" aria-label="Подробнее о гостинице">Подробнее</a>
+    					<a class="button book-it" href="#book-it" aria-label="Забронировать гостиницу">Забронировать</a>
     				</div>
     				<div class="rating">
     					<!-- Здесь будет форма-->
@@ -133,9 +143,9 @@
   		<span class="hashtag">#visitSEDONA</span>
   		<div class="footer-social">
   			<ul>
-  				<li><a class="social-button" href="#tw" aria-label="we are in twitter">twitter</a></li>
-  				<li><a class="social-button" href="#fb" aria-label="we are in facebook">facebook</a></li>
-  				<li><a class="social-button" href="#yt" aria-label="we are in you tube">you tube</a></li>
+  				<li><a class="social-button" href="#tw" aria-label="Мы в твиттере">twitter</a></li>
+          		<li><a class="social-button" href="#fb" aria-label="Мы в фейсбуке">facebook</a></li>
+          		<li><a class="social-button" href="#yt" aria-label="Мы на ютубе">you tube</a></li>
   			</ul>
   		</div>
   		<p class="footer-copyright">
