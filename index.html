@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-	<title>HTML Academy: Седона</title>
+	  <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
@@ -28,71 +31,72 @@
       </section>
   	  <section class="main-features">
   	  	<ul class="features-list">
-  	  		<li class="features-item">
+  	  		<li class="features-item background-blue">
   	  		  <h3>Настоящий городок</h3>
   	  		  <span class="number">№1</span>
   	  		  <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
   	  		</li>
-          <li class="features-item">
+          <li class="features-item recommendations">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p> 
           </li>
-          <li class="features-item">
+          <li class="features-item recommendations">
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>  
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p> 
           </li>
-          <li class="features-item">
+          <li class="features-item recommendations">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>  
           </li>
-  	  		<li class="features-item">
+  	  		<li class="features-item background-blue">
   	  		  <h3>Там есть мост дьявола</h3>
   	  		  <span class="number">№2</span>
   	  		  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
   	  		</li>
-  	  		<li class="features-item">
+  	  		<li class="features-item background-grey">
   	  		  <h3>Небольшая площадь</h3>
   	  		  <span class="number">№3</span>
   	  		  <p>Все достопримечательности находятся очень близко</p>
   	  		</li>
-  	  		<li class="features-item">
+  	  		<li class="features-item background-grey">
   	  		  <h3>Красивая дорога</h3>
   	  		  <span class="number">№4</span>
   	  		  <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
   	  		</li>
-  	  		<li class="features-item">
+  	  		<li class="features-item background-grey">
   	  		  <h3>Мало туристов</h3>
   	  		  <span class="number">№5</span>
   	  		  <p>Большинство едет в Гранд Каньон и толпится там</p>
   	  	    </li>
   	    </ul>
   	  </section>
+      <div class="map"></div>
   	  <section class="hotel-search">
   	  	<h2 class="visually-hidden">Поиск отеля в Седоне</h2>
-        <p>Заинтересовались?</p>
+        <p class="interested">Заинтересовались?</p>
   	  	<p class="hotel-search-info">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в Седоне</p>
   	  	<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <h2>Поиск гостиницы в Седоне</h2>
+          <h2 class="main-search">Поиск гостиницы в Седоне</h2>
           <p class="appointment-item">
             <label for="appointment-arrival-date">Дата заезда:</label>
-            <input id="appointment-arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+            <input class="date" id="appointment-arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
             <button class="button-calendar" type="button" aria-label="Дата заезда"><img src="img/calendar.svg" alt="Календарь"></button>
           </p>
           <p class="appointment-item">
             <label for="appointment-departure-date">Дата выезда:</label> 
-            <input id="appointment-departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+            <input class="date" id="appointment-departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
             <button class="button-calendar" type="button" aria-label="Дата выезда"><img src="img/calendar.svg" alt="Календарь"></button>
           </p>
           <p class="appointment-item">
             <label for="appointment-abults">Взрослые:</label>
             <button class="button-enlarge" type="button" aria-label="Уменьшть количество человек">-</button>
-            <input id="appointment-abults" type="number" name="adults" value="2">
+            <input class="people" id="appointment-abults" type="number" name="adults" value="2">
             <button class="button-reduce" type="button" aria-label="Увеличить количество человек">+</button>
           </p>
           <p class="appointment-item">
             <label for="appointment-children">Дети:</label>
             <button class="button-enlarge" type="button" aria-label="Уменьшть количество человек">-</button>
-            <input id="appointment-children" type="number" name="children" value="0">
+            <input class="people" id="appointment-children" type="number" name="children" value="0">
             <button class="button-reduce" type="button" aria-label="Увеличить количество человек">+</button>
           </p>
           <button class="button" type="submit" aria-label="Найти по выбранным критериям">Найти</button>
