@@ -61,16 +61,18 @@
     					</li>
     				</ul>
     			</fieldset>
-    			<fieldset>
+    			<fieldset class="price">
     				<legend>Стоимость в сутки (Р):</legend>
-    				<label for="min">От
-    					<input id="min" type="text" name="min-price" placeholder="0">
+    				<div class="price-border">
+    					<label for="min">От
+    						<input id="min" type="text" name="min-price" placeholder="0">
+    					</label>
+    					<label for="max">До
+    						<input id="max" type="text" name="max-price" placeholder="3000">
     				</label>
-    				<label for="max">До
-    					<input id="max" type="text" name="max-price" placeholder="3000">
-    				</label>
+    				</div>
     				<input type="range" id="price-day" name="price-day" min="0" max="3000" step="1">
-    				<button class="button" type="submit" aria-label="Показать выбранные параметры">Показать</button>
+    				<button class="button button-show" type="submit" aria-label="Показать выбранные параметры">Показать</button>
     			</fieldset>
         	</form>
     	</div>
@@ -83,12 +85,12 @@
     			<li class="sorting-item"><a href="#type" aria-label="Сортировка по типу">По типу</a></li>
     			<li class="sorting-item"><a href="#rating" aria-label="Сортировка по рейтенгу">По рейтенгу</a></li>	
     		</ul>
-    		<a class="button-sort-down-up" href="#sort-down-up" aria-label="Сортировка сверху-вниз">
+    		<a class="button-sort down-up" href="#sort-down-up" aria-label="Сортировка сверху-вниз">
     			<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
     				<path fill="#231F20" d="M5.5 0L0 10h11z"/>
     			</svg>
     		</a>
-    		<a class="button-sort-top-down" href="#sort-top-down" aria-label="Сортировка снизу-вверх">
+    		<a class="button-sort top-down" href="#sort-top-down" aria-label="Сортировка снизу-вверх">
     			<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
     				<path fill="#231F20" d="M5.5 10L0 0h11"/>
     			</svg>
@@ -107,7 +109,7 @@
     					<a class="button book-it" href="#book-it" aria-label="Забронировать гостиницу">Забронировать</a>
     				</div>
     				<div class="rating">
-    					<!-- Здесь будет форма-->
+    					<div class="star"></div>
     					<span class="assessment">Рейтинг: 8,5</span>
     				</div>
     			</li>
@@ -121,7 +123,7 @@
     					<a class="button book-it" href="#book-it" aria-label="Забронировать гостиницу">Забронировать</a>
     				</div>
     				<div class="rating">
-    					<!-- Здесь будет форма-->
+    					<div class="star"></div>
     					<span class="assessment">Рейтинг: 8,9</span>
     				</div>
     			</li>
@@ -135,7 +137,7 @@
     					<a class="button book-it" href="#book-it" aria-label="Забронировать гостиницу">Забронировать</a>
     				</div>
     				<div class="rating">
-    					<!-- Здесь будет форма-->
+    					<div class="star"></div>
     					<span class="assessment">Рейтинг: 9,2</span>
     				</div>
     			</li>
