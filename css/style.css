@@ -1,6 +1,9 @@
 body {
+  width: 1202px;
   margin: 0;
   padding: 0;
+  margin-left: 40px;
+  margin-right: 40px;
 
   font-family: "PT Sans", Arial, serif;
   font-size: 14px;
@@ -23,8 +26,21 @@ a {
   background-color: #ffffff;
 }
 
+
+
 .site-navigation {
+  height: 56px;
+
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 0;
+}
+
+.main-header-logo img{
+  width: 140px;
+  height: 71px;
 }
 
 .site-navigation a {
@@ -47,15 +63,21 @@ a {
 
 .container
 .main-background {
-  width: 1201px;
-  height: 807px;
+  width: 1200px;
+  height: 564px;
 
   background-image: url(../img/main-background-photo.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 0;
+  margin-bottom: 60px;
 }
 
 .features h1 {
+  padding-left: 380px;
+  padding-right: 380px;
+  margin-bottom: 38px;
+
   font-family: PT Sans;
   font-size: 21px;
   font-weight: bold;
@@ -65,11 +87,22 @@ a {
 }
 
 .features p {
+  padding-left: 355px;
+  padding-right: 356px;
+  margin-bottom: 56px;
+
 	font-family: PT Sans;
   font-size: 14px;
   line-height: 1.86;
   text-align: center;
   color: #333333;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: : 0;
 }
 
 .features-list
@@ -78,6 +111,70 @@ a {
 
   width: 400px;
   height: 256px;
+}
+
+.features-list 
+.number1 {
+  padding-top: 46px;
+}
+
+.number1-p {
+  padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.features-list 
+.number2 {
+  padding-top: 49px;
+}
+
+.number2-p {
+  padding-bottom: 65px;
+  padding-left: 48px;
+  padding-right: 49px;
+}
+
+.background-grey h3 {
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.background-grey
+.number3 {
+  padding-left: 141px;
+  padding-right: 143px;
+}
+
+.background-grey
+.number4 {
+  padding-left: 151px;
+  padding-right: 151px;
+}
+
+.background-grey
+.number5 {
+  padding-left: 151px;
+  padding-right: 151px;
+}
+
+.background-grey p {
+  padding-bottom: 64px;
+}
+
+.number3-p {
+  padding-left: 95px;
+  padding-right: 97px;
+}
+
+.number4-p {
+  padding-left: 69px;
+  padding-right: 69px;
+}
+
+.number5-p {
+  padding-left: 77px;
+  padding-right: 77px;
 }
 
 .features-list
@@ -108,20 +205,41 @@ a {
 .background-sedona1 {
   width: 800px;
   height: 256px;
-
-  background-image: url(../img/photo-sedona1.jpg);
 }
 
 .background-sedona2 {
   width: 800px;
   height: 256px;
+}
 
-  background-image: url(../img/photo-sedona2.jpg);
+
+.features-list
+.recommendations {
+  width: 400px;
+  height: 330px;
+}
+
+.icon1 p {
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.icon2 p {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.icon3 p {
+  padding-right: 64px;
+  padding-left: 64px;
 }
 
 .icon1 h3::before {
   width: 75px;
   height: 72px;
+  margin-left: 162px;
+  margin-bottom: 29px; 
+  margin-top: 60px; 
 
   content: "";
   background-image: url(../img/icon-1.svg);
@@ -133,6 +251,9 @@ a {
 .icon2 h3::before {
   width: 74px;
   height: 70px;
+  margin-left: 162px;
+  margin-bottom: 33px;
+  margin-top: 61px;
   
   content: "";
   background-image: url(../img/icon-2.svg);
@@ -144,6 +265,9 @@ a {
 .icon3 h3::before {
   width: 64px;
   height: 76px;
+  margin-left: 162px;
+  margin-bottom: 32px;
+  margin-top: 56px;
   
   content: "";
   background-image: url(../img/icon-3.svg);
@@ -173,6 +297,19 @@ a {
 .features-list
 .background-grey {
   background-color: #eeeeee;
+}
+
+.interested {
+  margin-top: 0;
+  padding-top: 57px;
+  padding-bottom: 35px;
+}
+
+.hotel-search-info {
+  margin-top: 0;
+  padding-bottom: 138px;
+  padding-left: 383px;
+  padding-right: 383px;
 }
 
 .map {
@@ -222,6 +359,10 @@ a {
 }
 
 .appointment-form {
+  position: relative;
+  left: 316px;
+  bottom: 695px;
+
   width: 568px;
   height: 481px;
   background: #ffffff;
@@ -319,6 +460,12 @@ a {
 .main-footer {
   width: 1200px;
   height: 120px;
+
+  margin-top: 400px;
+  margin-bottom: 36px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main-footer
