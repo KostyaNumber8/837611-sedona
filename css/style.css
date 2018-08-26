@@ -49,7 +49,7 @@ a {
 .main-navigation
 .site-navigation a {
   width: 239px;
-  height: 56px;
+  min-height: 56px;
 
   color: #000000;
 }
@@ -142,7 +142,7 @@ a {
   list-style: none;
 
   width: 400px;
-  height: 256px;
+  min-height: 256px;
 }
 
 .features-list 
@@ -248,7 +248,7 @@ a {
 .features-list
 .recommendations {
   width: 400px;
-  height: 330px;
+  min-height: 330px;
 }
 
 .icon1 p {
@@ -337,6 +337,11 @@ a {
   padding-bottom: 35px;
 }
 
+.main-search {
+  position: relative;
+  bottom: 560px;
+}
+
 .hotel-search-info {
   margin-top: 0;
   padding-bottom: 138px;
@@ -347,7 +352,7 @@ a {
 .map {
   background-image: url(../img/map.jpg);
   width: 1200px;
-  height: 593px;
+  height: 473px;
 }
 
 .hotel-search 
@@ -373,7 +378,7 @@ a {
 .hotel-search 
 .main-search {
   width: 568px;
-  height: 86px;
+  min-height: 86px;
   
   font-family: PT Sans;
   font-size: 21px;
@@ -386,17 +391,18 @@ a {
 
 .hotel-search {
   width: 1200px;
-  height: 593px;
+  min-height: 593px;
   text-align: center;
 }
 
 .appointment-form {
+  display: none;
   position: relative;
   left: 316px;
-  bottom: 695px;
+  bottom: 572px;
 
   width: 568px;
-  height: 481px;
+  min-height: 395px;
   background: #ffffff;
 }
 
@@ -413,8 +419,17 @@ a {
 .appointment-item 
 .date {
   width: 346px;
-  height: 38px;
+  min-height: 38px;
+  
   background-color: #f2f2f2;
+}
+
+.arrival-date {
+  padding-top: 55px;
+}
+
+.departure-date {
+  padding-top: 29px;
 }
 
 .appointment-item 
@@ -445,21 +460,26 @@ a {
 .appointment-item 
 .people {
   width: 38px;
-  height: 38px;
+  min-height: 38px;
   background-color: #f2f2f2;
+}
+
+.abults-children {
+  display: flex;
+  justify-content: space-around;
 }
 
 .appointment-item 
 .button-reduce {
   width: 38px;
-  height: 38px;
+  min-height: 38px;
   background-color: #f2f2f2;
 }
 
 .appointment-item 
 .button-enlarge {
   width: 38px;
-  height: 38px;
+  min-height: 38px;
   background-color: #f2f2f2;
 }
 
@@ -467,6 +487,9 @@ a {
 .button {
   width: 458px;
   height: 58px;
+  margin-left: 55px;
+  margin-bottom: 55px;
+  margin-right: 55px;
   
   font-family: PT Sans;
   font-size: 21px;
@@ -474,7 +497,7 @@ a {
   line-height: 26px;
   text-align: center;
   color: #ffffff;
-
+  
   background-color: #81b3d2;
 }
 
@@ -491,10 +514,8 @@ a {
 
 .main-footer {
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
 
-  margin-top: 400px;
-  margin-bottom: 36px; 
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -518,7 +539,7 @@ a {
 .footer-social 
 .social-button {
   width: 46px;
-  height: 48px;
+  min-height: 48px;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -560,11 +581,18 @@ a {
 }
 
 .type-hotels {
+  padding-left: 115px;
+}
 
+.price {
+  padding-right: 206px;
+}
+
+.filter-option {
+  padding-bottom: 36px;
 }
 
 .price-day {
-  padding-right: 206px;
   padding-bottom: 13px;
 }
 
@@ -607,7 +635,7 @@ a {
 .hotel-choice
 .price-border {
   width: 314px;
-  height: 32px;
+  min-height: 32px;
   border: solid 2px #ffffff;
 }
 
@@ -619,7 +647,7 @@ a {
 
 .button-show {
   width: 133px;
-  height: 32px;
+  min-height: 32px;
   border: solid 2px #ffffff;
 
   font-family: PT Sans;
@@ -745,7 +773,7 @@ a {
 .description
 .more-info {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   
   color: #ffffff;
   background-color: #81b3d2;
@@ -766,7 +794,7 @@ a {
 
 .description a {
   width: 142px;
-  height: 27px;
+  min-height: 27px;
 }
 
 .description
@@ -790,7 +818,7 @@ a {
 .rating
 .assessment {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   
   background-color: #f2f2f2;
   color: #666666;
