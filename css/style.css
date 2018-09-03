@@ -759,6 +759,32 @@ input[type="radio"].visually-hidden {
   margin-bottom: 31px;
 }
 
+.filter-input-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -2px;
+  left: -39px;
+
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+}
+
+.filter-input-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
 .price-form {
   margin-left: 333px;
   padding: 0;
@@ -768,6 +794,8 @@ input[type="radio"].visually-hidden {
 .filter-option {
   padding-bottom: 26px;
   margin-left: -1px;
+
+  position: relative;
 }
 
 .filter-range {
@@ -904,7 +932,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.btn-transparent:hover {
+.button-transparent:hover {
   color: #000000;
 
   background: #ffffff;
@@ -929,13 +957,13 @@ input[type="radio"].visually-hidden {
 
 .type-hotels-motel {
   margin-top: -1px;
-  padding-left: 37px;
+  margin-left: 35px;
   letter-spacing: 0.2px;
 }
 
 .apartments {
   padding-bottom: 7px;
-  padding-left: 37px;
+  margin-left: 35px;
   letter-spacing: 0.2px;
 }
 
