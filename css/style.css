@@ -456,7 +456,7 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-form {
-  display: none; 
+  /* display: none; */
   position: absolute;
   left: 315px;
   bottom: 78px;
@@ -482,8 +482,6 @@ input[type="radio"].visually-hidden {
   width: 336px;
   min-height: 38px;
   border: none;
-  margin-left: 40px;
-  padding-left: 12px;
 
   font-family: PT Sans;
   font-size: 14px;
@@ -496,12 +494,29 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
 }
 
+.date-arrival {
+  margin-left: 18px;
+  padding-left: 12px;
+}
+
+.date-departure {
+  margin-left: 14px;
+  padding-left: 12px;
+}
+
 .arrival-date {
+  margin-left: 20px;
   padding-top: 40px;
+
+  letter-spacing: 0.2px;
 }
 
 .departure-date {
+  margin-left: 19px;
   padding-top: 13px;
+  margin-bottom: 15px;
+
+  letter-spacing: 0.2px;
 }
 
 .appointment-item 
@@ -550,10 +565,18 @@ input[type="radio"].visually-hidden {
 .appointment-item 
 .people {
   width: 38px;
-  min-height: 38px;
+  min-height: 36px;
+  
+  position: relative;
+  left: -3px;
+
   background-color: #f2f2f2;
   border: none;
   text-align: center;
+}
+
+.appointment-item button {
+  font-weight: bold;
 }
 
 .abults-children {
@@ -568,6 +591,9 @@ input[type="radio"].visually-hidden {
   min-height: 38px; 
   padding-right: 0;
   padding-left: 0;
+
+  position: relative;
+  left: -7px;
 
   background-color: #f2f2f2;
   border: none;
@@ -594,6 +620,8 @@ input[type="radio"].visually-hidden {
 .appointment-abults
 .button-enlarge {
   margin-left: 37px;
+
+  position: relative;
 }
 
 .appointment-children label {
@@ -612,6 +640,7 @@ input[type="radio"].visually-hidden {
   margin-left: 55px;
   margin-bottom: 55px;
   margin-right: 55px;
+  margin-top: 1px;
   
   font-family: PT Sans;
   font-size: 21px;
