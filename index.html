@@ -36,7 +36,7 @@
   	  		  <p class="number1-p">Седона-не аттракцион для туристов, там течет своя жизнь</p>
   	  		</li>
           <li>
-            <img class="background-sedona1" src="img/photo-sedona1.jpg" alt="Фото Седона-настоящий городок">
+            <img class="background-sedona1" src="img/photo-sedona1.jpg" width="800" height="256" alt="Фото Седона-настоящий городок">
           </li>
           <li class="features-item recommendations icon1">
             <h3 class="recommendations-h1">Жильё</h3>
@@ -51,7 +51,7 @@
             <p>Не только китайского, но и местного производства!</p> 
           </li>
           <li>
-            <img class="background-sedona2" src="img/photo-sedona2.jpg" alt="Фото Седона-место дьявола">
+            <img class="background-sedona2" src="img/photo-sedona2.jpg" width="800" height="256" alt="Фото Седона-место дьявола">
           </li>
   	  		<li class="features-item background-blue">
   	  		  <h3 class="number2">Там есть мост дьявола</h3>
@@ -80,7 +80,7 @@
         <p class="interested">Заинтересовались?</p>
   	  	<p class="hotel-search-info">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6546.901515584176!2d-111.76544168975249!3d34.87002569000739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zU2Vkb25hLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQIGhvbGJ1cmc!5e0!3m2!1sru!2sru!4v1536071112574" width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6546.901515584176!2d-111.76544168975249!3d34.87002569000739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zU2Vkb25hLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQIGhvbGJ1cmc!5e0!3m2!1sru!2sru!4v1536071112574" width="1200" height="473" style="border:0" allowfullscreen></iframe>
         </div>
   	  	<button class="main-search" type="button">Поиск гостиницы в Седоне</button>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
@@ -108,13 +108,13 @@
             <p class="appointment-item appointment-abults">
               <label for="appointment-abults">Взрослые:</label>
               <button class="button-enlarge button-enlarge-abults " type="button" aria-label="Уменьшть количество человек">-</button>
-              <input class="people" id="appointment-abults" type="number" name="adults" value="2">
+              <input class="people" id="appointment-abults" type="text" name="adults" value="2">
               <button class="button-reduce" type="button" aria-label="Увеличить количество человек">+</button>
             </p>
             <p class="appointment-item appointment-children">
               <label for="appointment-children">Дети:</label>
               <button class="button-enlarge button-enlarge-children" type="button" aria-label="Уменьшть количество человек">-</button>
-              <input class="people" id="appointment-children" type="number" name="children" value="0">
+              <input class="people" id="appointment-children" type="text" name="children" value="0">
               <button class="button-reduce" type="button" aria-label="Увеличить количество человек">+</button>
             </p>
           </div> 
@@ -152,30 +152,6 @@
   			</a>
   		</p>
   	</footer>
-    <script>
-      var link = document.querySelector(".main-search");
-
-      var popup = document.querySelector(".appointment-form");
-
-      var form = document.querySelector("form");
-      var arrivalDate = document.querySelector(".date-arrival");
-      var departureDate = document.querySelector(".date-departure");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.toggle("form-show");
-        arrivalDate.focus();
-      });
-
-      form.addEventListener("submit", function (evt) {
-        if (!arrivalDate.value || !departureDate.value) {
-        evt.preventDefault();
-        popup.classList.remove("form-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("form-error");
-        console.log("Необходимо выбрать дату заезда и дату выезда");
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
