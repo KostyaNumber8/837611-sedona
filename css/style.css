@@ -547,12 +547,20 @@ input[type="radio"].visually-hidden {
 .button-calendar path {
 	fill: #a9a9a9;
 }
-	
-.button-calendar svg:hover path {
+
+.button-calendar1:hover path {
 	fill: #000000;
 }
 
-.button-calendar svg:active path {
+.button-calendar1:active path {
+	fill: #81b3d2;
+}
+	
+.button-calendar2:hover path {
+	fill: #000000;
+}
+
+.button-calendar2:active path {
 	fill: #81b3d2;
 }
 
